@@ -1,0 +1,11 @@
+21:56:19 **** Incremental Build of project SaaqGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/111274388_tp4programmationcpp/SaaqGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/suppressioninterface.o suppressioninterface.cpp
+g++  -o SaaqGUI debug/confirmationsuppression.o debug/suppressioninterface.o debug/vehiculepromenadeinterface.o debug/camioninterface.o debug/main.o debug/saaqgui.o debug/moc_confirmationsuppression.o debug/moc_suppressioninterface.o debug/moc_vehiculepromenadeinterface.o debug/moc_camioninterface.o debug/moc_saaqgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'SaaqGUI' && test -f SaaqGUI.gdb-index && objcopy --add-section '.gdb_index=SaaqGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'SaaqGUI' 'SaaqGUI' && rm -f SaaqGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/111274388_tp4programmationcpp/SaaqGUI »
+
+21:56:21 Build Finished (took 2s.217ms)
+

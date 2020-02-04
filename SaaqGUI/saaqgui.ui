@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SaaqGUIClass</class>
+ <widget class="QMainWindow" name="SaaqGUIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>551</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMENU">
+    <property name="title">
+     <string>MENU</string>
+    </property>
+    <widget class="QMenu" name="menuAjouter_V_hicule">
+     <property name="title">
+      <string>Ajouter Véhicule</string>
+     </property>
+     <addaction name="AjouterCamionAction"/>
+     <addaction name="AjoutVehiculePromenadeAction"/>
+    </widget>
+    <addaction name="menuAjouter_V_hicule"/>
+    <addaction name="actionSupprimer_V_hicule"/>
+    <addaction name="actionQUITTER"/>
+   </widget>
+   <addaction name="menuMENU"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCamion">
+   <property name="text">
+    <string>Camion</string>
+   </property>
+  </action>
+  <action name="actionV_hicule_de_Promenade">
+   <property name="text">
+    <string>Véhicule de Promenade</string>
+   </property>
+  </action>
+  <action name="actionG">
+   <property name="text">
+    <string>g</string>
+   </property>
+  </action>
+  <action name="actionQUITTER">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_V_hicule">
+   <property name="text">
+    <string>Supprimer Véhicule</string>
+   </property>
+  </action>
+  <action name="AjouterCamionAction">
+   <property name="text">
+    <string>Camion</string>
+   </property>
+  </action>
+  <action name="AjoutVehiculePromenadeAction">
+   <property name="text">
+    <string>Véhicule de Promenade</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionSupprimer_V_hicule</sender>
+   <signal>triggered()</signal>
+   <receiver>SaaqGUIClass</receiver>
+   <slot>dialogSupprimerVehicule()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>dialogSupprimerVehicule()</slot>
+ </slots>
+</ui>
