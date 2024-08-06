@@ -1,32 +1,32 @@
 # Introduction
 
-L'objectif de ce projet était de former une interface graphique pour la SAAQ (Société de l'assurance automobile du Québec) qui permet d'affecter des véhicules avec des plaques d'immatriculations et un NIV ( Numéro d’identification d'un véhicule) valide à un propriétaire.
+The objective of this project was to create a graphical interface for the SAAQ (Société de l'assurance automobile du Québec) that allows assigning vehicles with valid license plates and a VIN (Vehicle Identification Number) to an owner.
 
-Ce projet n'a pas été fourni à la SAAQ puisqu'il s'agissait juste d'un contexte pour pouvoir appliquer les différents contextes en C++. 
+This project was not delivered to the SAAQ as it was just a context to apply various concepts in C++.
 
-Le projet s'étalait sur toute la session d'Automne 2019 (Septembre à Décembre) et était découpé en 4 travaux pratiques. Chaque travail pratique nous faisait avancer dans les fonctionnalités.
+The project spanned the entire Fall 2019 semester (September to December) and was divided into four practical assignments. Each assignment advanced the functionality of the project.
 
-Le premier TP nous a fait développé 2 fonctions : une pour valider les plaques d'immatriculations des véhicules de promenades et des camions, l'autre pour valider un NIV.
+The first assignment had us develop two functions: one to validate the license plates of passenger vehicles and trucks, and another to validate a VIN.
 
-Le deuxième TP nous a fait développé la classe Véhicule (dossier source), documenté le code présent avec DOXYGEN et utilisé les namespaces. 
+The second assignment had us develop the `Vehicle` class (source folder), document the existing code with DOXYGEN, and use namespaces.
 
-Le troisième TP nous a fait développé la hiérarchie de classes suivante, ainsi que l'implémentation de test avec GoogleTest et de la théorie du contrat.
+The third assignment had us develop the following class hierarchy, implement tests with GoogleTest, and apply contract theory.
 
-![Hiérarchie de classes](https://i.ibb.co/y8BQ3nL/image.png)
+![Class Hierarchy](https://i.ibb.co/y8BQ3nL/image.png)
 
-Le dernier TP (qui était le seul en binôme) nous a fait développé une interface Qt et la gestion des exceptions.
+The final assignment (the only one done in pairs) had us develop a Qt interface and manage exceptions.
 
-# Description de la structure
- 
-Il contient :
-  - Un dossier source qui est une librairie statique où se trouve les classes métiers
-  - Un dossier SaaqGUi qui contient les fichiers générant l'interface graphique Qt
-  - Un dossier tp4_Testeur qui contient les tests GoogleTest des classes
-  
-# Librairies
+# Project Structure
 
-Ce projet a été compilé avec l'IDE Eclipse. Il nécessite :
+The project contains:
+  - A `source` folder, which is a static library containing the business logic classes.
+  - A `SaaqGUI` folder, which contains the files for generating the Qt graphical interface.
+  - A `tp4_Testeur` folder, which contains the GoogleTest tests for the classes.
+
+# Libraries
+
+This project was compiled with the Eclipse IDE. It requires:
 
 * Qt
 * GoogleTest
-* faire le lien avec la librairie statique source
+* Linking with the static source library
